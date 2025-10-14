@@ -1,8 +1,7 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
-import { getSession, submitReview, getReviewerProgress } from '../utils/api';
-import { Business, Review } from '../types';
-import { saveReviewState, getReviewState } from '../utils/localStorage';
+import { getClientSession, submitClientReview, getClientProgress } from '../utils/clientStorage';
+import { Business } from '../types';
 import BusinessCard from '../components/BusinessCard';
 import ImageViewer from '../components/ImageViewer';
 import CommentBox from '../components/CommentBox';
@@ -26,27 +25,28 @@ function ReviewPage() {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    if (!sessionId || !reviewerName) {
+    if (!reviewerName) {
       navigate('/');
       return;
     }
 
     loadSession();
-  }, [sessionId, reviewerName]);
+  }, []);
 
-  const loadSession = async () => {
+  const loadSession = () => {
     try {
-      const data = await getSession(sessionId!);
+      const data = getClientSession();
+      if (!data) {
+        navigate('/');
+        return;
+      }
+
       setBusinesses(data.businesses);
       setSessionName(data.session.name);
 
       // Load previous progress
-      const progress = await getReviewerProgress(sessionId!, reviewerName);
-      const savedState = getReviewState(sessionId!, reviewerName);
-
-      if (savedState) {
-        setCurrentIndex(savedState.currentIndex);
-      } else if (progress.length > 0 && progress.length < data.businesses.length) {
+      const progress = getClientProgress(reviewerName);
+      if (progress.length > 0 && progress.length < data.businesses.length) {
         setCurrentIndex(progress.length);
       }
 
@@ -63,12 +63,12 @@ function ReviewPage() {
     setSelectedOption(option);
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = () => {
     if (!selectedOption || !currentBusiness) return;
 
     setSubmitting(true);
     try {
-      await submitReview({
+      submitClientReview({
         business_id: currentBusiness.id,
         reviewer_name: reviewerName,
         selected_option: selectedOption,
@@ -126,19 +126,6 @@ function ReviewPage() {
     return () => window.removeEventListener('keydown', handleKeyPress);
   }, [selectedOption, currentIndex, currentBusiness]);
 
-  // Save state periodically
-  useEffect(() => {
-    if (currentBusiness) {
-      saveReviewState(sessionId!, reviewerName, currentIndex, {
-        businessId: currentBusiness.id,
-        selectedOption: selectedOption || undefined,
-        commentA,
-        commentB,
-        startTime,
-      });
-    }
-  }, [selectedOption, commentA, commentB, currentIndex]);
-
   if (loading) {
     return (
       <div className="review-page">
@@ -162,7 +149,7 @@ function ReviewPage() {
     <div className="review-page">
       <div className="header">
         <div>
-          <h1>This or That: Website Images</h1>
+          <h1>Getty Blind Test</h1>
           <p className="session-info">
             Session: <strong>{sessionName}</strong> | Reviewer: <strong>{reviewerName}</strong>
           </p>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getAnalytics } from '../utils/api';
+import { getClientAnalytics } from '../utils/clientStorage';
 import { exportToCSV } from '../utils/excelParser';
 import { AnalyticsData } from '../types';
 import PreferenceChart from '../components/PreferenceChart';
@@ -14,16 +14,12 @@ function AnalyticsPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!sessionId) {
-      navigate('/');
-      return;
-    }
     loadAnalytics();
-  }, [sessionId]);
+  }, []);
 
-  const loadAnalytics = async () => {
+  const loadAnalytics = () => {
     try {
-      const data = await getAnalytics(sessionId!);
+      const data = getClientAnalytics();
       setAnalytics(data);
       setLoading(false);
     } catch (err) {
@@ -53,7 +49,7 @@ function AnalyticsPage() {
       return reviews;
     });
 
-    exportToCSV(exportData, `analytics-${analytics.session.name}-${Date.now()}.csv`);
+    exportToCSV(exportData, `getty-blind-test-results-${Date.now()}.csv`);
   };
 
   if (loading) {
@@ -226,4 +222,3 @@ function AnalyticsPage() {
 }
 
 export default AnalyticsPage;
-
