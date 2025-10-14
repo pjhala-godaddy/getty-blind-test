@@ -1,0 +1,38 @@
+.business-card {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.business-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.business-name .industry {
+  color: #666;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.business-description {
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.metadata {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #666;
+}
+
+.metadata-item span {
+  font-weight: 500;
+  color: #222;
+}
+
