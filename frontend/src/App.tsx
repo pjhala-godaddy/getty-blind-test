@@ -5,7 +5,7 @@ import AnalyticsPage from './pages/AnalyticsPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/getty-blind-test">
       <Routes>
         <Route path="/" element={<UploadPage />} />
         <Route path="/review/:sessionId" element={<ReviewPage />} />
