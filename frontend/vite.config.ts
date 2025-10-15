@@ -6,5 +6,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: process.env.NODE_ENV === 'production' ? '/this-or-that/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/getty-blind-test/' : '/',
 });
