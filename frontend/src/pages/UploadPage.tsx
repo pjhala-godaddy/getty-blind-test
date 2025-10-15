@@ -2,14 +2,20 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createClientSession } from '../utils/clientStorage';
 import { getReviewerName, saveReviewerName } from '../utils/localStorage';
-import REAL_DATA from '../data/businesses.json';
+import { ParsedBusinessData } from '../types';
+import REAL_DATA_RAW from '../data/businesses.json';
 import '../styles/UploadPage.css';
+
+const REAL_DATA = REAL_DATA_RAW as ParsedBusinessData[];
 
 function UploadPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [reviewerName, setReviewerName] = useState(getReviewerName() || '');
   const navigate = useNavigate();
+
+  // Debug: Check if data loaded
+  console.log('REAL_DATA loaded:', REAL_DATA?.length || 0, 'businesses');
 
   const handleStartReview = () => {
     if (!reviewerName.trim()) {
@@ -21,6 +27,7 @@ function UploadPage() {
     setError(null);
 
     try {
+      console.log('Starting review with data:', REAL_DATA?.length || 0, 'businesses');
       saveReviewerName(reviewerName);
       const result = createClientSession(
         `WSBA Prompt Testing - ${REAL_DATA.length} Businesses`, 
@@ -28,8 +35,11 @@ function UploadPage() {
         REAL_DATA
       );
       
+      console.log('Session created:', result.session.id);
+      console.log('Navigating to review page...');
       navigate(`/review/${result.session.id}?reviewer=${encodeURIComponent(reviewerName)}`);
     } catch (err) {
+      console.error('Error creating session:', err);
       setError(err instanceof Error ? err.message : 'Failed to create session');
     } finally {
       setLoading(false);

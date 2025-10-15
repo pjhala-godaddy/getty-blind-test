@@ -35,12 +35,18 @@ function ReviewPage() {
 
   const loadSession = () => {
     try {
+      console.log('ReviewPage: Loading session...');
       const data = getClientSession();
       if (!data) {
+        console.log('ReviewPage: No session data found, redirecting to home');
         navigate('/');
         return;
       }
 
+      console.log('ReviewPage: Session loaded with', data.businesses.length, 'businesses');
+      console.log('ReviewPage: First business:', data.businesses[0]?.name);
+      console.log('ReviewPage: First image URL A:', data.businesses[0]?.image_url_a);
+      
       setBusinesses(data.businesses);
       setSessionName(data.session.name);
 
@@ -50,8 +56,10 @@ function ReviewPage() {
         setCurrentIndex(progress.length);
       }
 
+      console.log('ReviewPage: Ready to display business', currentIndex + 1);
       setLoading(false);
     } catch (err) {
+      console.error('ReviewPage: Error loading session:', err);
       setError(err instanceof Error ? err.message : 'Failed to load session');
       setLoading(false);
     }

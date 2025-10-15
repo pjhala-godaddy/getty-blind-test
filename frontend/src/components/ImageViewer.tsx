@@ -12,6 +12,8 @@ function ImageViewer({ imageUrl, alt, selected, onSelect }: ImageViewerProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
+  console.log('ImageViewer rendering:', alt, 'URL:', imageUrl);
+
   return (
     <div
       className={`image-wrapper ${selected ? 'selected' : ''}`}
