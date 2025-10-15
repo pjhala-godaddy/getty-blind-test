@@ -10,21 +10,21 @@
   },
   {
     "name": "Accounting Solutions",
-    "description": "Accounting services firm providing tax preparation",
-    "industry": "bookkeeping",
-    "content_style": "and financial consulting.",
-    "writing_style": "Accountant",
-    "image_url_a": "street",
-    "image_url_b": "direct"
+    "description": "Accounting services firm providing tax preparation, bookkeeping, and financial consulting.",
+    "industry": "Accountant",
+    "content_style": "street",
+    "writing_style": "direct",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/1b694d6d-2f4f-4a70-9bf2-65f6cb25ed6b-test/a5ac87d252b68e265374d74876ad8079f6554218463049adadafd14a31633324_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/31169c71-ca7f-47f3-b036-cb770ae4c3d2-test/c1a511690abe99d51f5c2a50102d6a13a5b4dd17a0b06ddf871c566b2f7df131_ai.jpeg"
   },
   {
     "name": "Athletic Services",
-    "description": "Sports services company providing athletic training",
-    "industry": "equipment",
-    "content_style": "and sports programs.",
-    "writing_style": "Sports",
-    "image_url_a": "modern",
-    "image_url_b": "informative"
+    "description": "Sports services company providing athletic training, equipment, and sports programs.",
+    "industry": "Sports",
+    "content_style": "modern",
+    "writing_style": "informative",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/699c1749-67d9-44b4-9df5-7445b975965d-test/bbf7a663080e2ac2fbc471c82f76565a576636a9dab3b9eb19f63249fd208fe9_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/5465b806-3ba4-4550-b59b-0a8370e3ff3a-test/1ad630d28435783c55d74449c1b3526f49bd14e6bbef9b5cb2e31925519bcabc_ai.jpeg"
   },
   {
     "name": "Beauty Boutique",
@@ -55,12 +55,12 @@
   },
   {
     "name": "Build Pro",
-    "description": "Construction services provider offering building",
-    "industry": "renovation",
-    "content_style": "and maintenance solutions.",
-    "writing_style": "Construction Service",
-    "image_url_a": "luxury",
-    "image_url_b": "caring"
+    "description": "Construction services provider offering building, renovation, and maintenance solutions.",
+    "industry": "Construction Service",
+    "content_style": "luxury",
+    "writing_style": "caring",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/a087adde-18b5-416f-8224-7bdf09e416a9-test/8e0c98f7bbe1c6cd5ab3c9308a5132b7087a87dfded3ff4fab2ba74443f6c707_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/02bd2a50-792e-4ffd-85c2-3939f7042908-test/e898269590d7ee83914ca034211fd20098d3bd7a67e1faa6876808859e9f4e16_ai.jpeg"
   },
   {
     "name": "Build Solutions",
@@ -82,12 +82,12 @@
   },
   {
     "name": "Content Solutions",
-    "description": "Content creation company providing writing",
-    "industry": "editing",
-    "content_style": "and digital content services.",
-    "writing_style": "Blog",
-    "image_url_a": "modern",
-    "image_url_b": "caring"
+    "description": "Content creation company providing writing, editing, and digital content services.",
+    "industry": "Blog",
+    "content_style": "modern",
+    "writing_style": "caring",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/dc4a4885-920d-42ff-bea5-0218c67f1bcd-test/1d2de00c572955908ccecfe839c36b8d4546c39eb5e3e6c286c9276e506e9267_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/7677bd6c-0fbf-441a-81f0-afca2f17be52-test/8c34e7cf0557c832267dfacbb6c92bd88ddbb70878d84be2578a3fc8b39c660a_ai.jpeg"
   },
   {
     "name": "Corporate Advisors",
@@ -109,12 +109,12 @@
   },
   {
     "name": "Design Studio",
-    "description": "Creative studio offering artistic services",
-    "industry": "design solutions",
-    "content_style": "and visual communication.",
-    "writing_style": "Art and Design",
-    "image_url_a": "street",
-    "image_url_b": "upbeat"
+    "description": "Creative studio offering artistic services, design solutions, and visual communication.",
+    "industry": "Art and Design",
+    "content_style": "street",
+    "writing_style": "upbeat",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/6973fef1-03dd-4b33-94eb-78091f6e8e5c-test/bc8ee4d55605b532c2d8981d8400cdc8a4a63871059abb125cc8c2f67b967a1c_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/f9d4002a-f86c-4929-93e9-55a0e00009c3-test/e36335ddb0c23d07b142064de422fd76eede5339de8bb608f664c28726b84d7f_ai.jpeg"
   },
   {
     "name": "Educational Services",
@@ -199,21 +199,21 @@
   },
   {
     "name": "IT Solutions",
-    "description": "Technology solutions provider specializing in IT infrastructure",
-    "industry": "cybersecurity",
-    "content_style": "and digital transformation.",
-    "writing_style": "IT Company",
-    "image_url_a": "organic",
-    "image_url_b": "neutral"
+    "description": "Technology solutions provider specializing in IT infrastructure, cybersecurity, and digital transformation.",
+    "industry": "IT Company",
+    "content_style": "organic",
+    "writing_style": "neutral",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/f62bdf6e-4156-47d9-aeef-c1dc47ac9505-test/cc2e851cbe86bfb4df5174a330895de5270debec8d866c86ae93fd096ba685ec_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/bcf50475-c184-4f91-be09-4ae63a032fd3-test/c26eab9056f6cee2576c9f240d9fbc4988dc15e0daaa1ee9f7a5bc74fe990957_ai.jpeg"
   },
   {
     "name": "Image Arts",
-    "description": "Professional photography studio specializing in portraits",
-    "industry": "events",
-    "content_style": "and commercial photography services.",
-    "writing_style": "Photography",
-    "image_url_a": "modern",
-    "image_url_b": "informative"
+    "description": "Professional photography studio specializing in portraits, events, and commercial photography services.",
+    "industry": "Photography",
+    "content_style": "modern",
+    "writing_style": "informative",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/944bc62d-9dbe-4a89-be03-344d60985c8b-test/2a936608a6f71d6ae331efb5d9c78afdcc4ceb139e2d48f43fd1c5c3e67bc2cb_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/671046ad-8da5-4949-acd3-fc472792926d-test/93a16bd8dd97d8f260ae9457cb8322cdef4e3cedeb0247e8ef0dd94590947865_ai.jpeg"
   },
   {
     "name": "Interior Services",
@@ -289,21 +289,21 @@
   },
   {
     "name": "Money Solutions",
-    "description": "Financial services company providing investment",
-    "industry": "banking",
-    "content_style": "and financial planning solutions.",
-    "writing_style": "Financial Services",
-    "image_url_a": "modern",
-    "image_url_b": "upbeat"
+    "description": "Financial services company providing investment, banking, and financial planning solutions.",
+    "industry": "Financial Services",
+    "content_style": "modern",
+    "writing_style": "upbeat",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/dc46ff75-b8d2-4f97-bf83-4c1f4be0f73b-test/93b6cfddcc6da8c44fbcb77dc39618a029b5cb9969292f896f11c22c0fcb1464_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/9396411e-f09f-4dbc-b21c-5365eb0147b8-test/a43e31848eaf4afb6ef3fe65334216fdc70646805f0509766e2b2bcb6601df59_ai.jpeg"
   },
   {
     "name": "Music Partners",
-    "description": "Music services company providing entertainment",
-    "industry": "education",
-    "content_style": "and audio solutions.",
-    "writing_style": "Music",
-    "image_url_a": "modern",
-    "image_url_b": "neutral"
+    "description": "Music services company providing entertainment, education, and audio solutions.",
+    "industry": "Music",
+    "content_style": "modern",
+    "writing_style": "neutral",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/f85bf85d-636d-4da6-ad23-32c30965fd18-test/c114951c41c6b6b7abb149c9681be373ab3052c0e82c36278c2cb0cf8da2d58b_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/98700037-aba1-4c41-ad7a-f9cb191dda43-test/b4ba158a7c5d7644024b4b606e46cb753ee17ea920b5c4ec56a4d6e5e43ae3c1_ai.jpeg"
   },
   {
     "name": "Nonprofit Organization",
@@ -361,21 +361,21 @@
   },
   {
     "name": "Property Experts",
-    "description": "Comprehensive real estate services including property management",
-    "industry": "investment consulting",
-    "content_style": "and market analysis.",
-    "writing_style": "Real Estate Services",
-    "image_url_a": "organic",
-    "image_url_b": "caring"
+    "description": "Comprehensive real estate services including property management, investment consulting, and market analysis.",
+    "industry": "Real Estate Services",
+    "content_style": "organic",
+    "writing_style": "caring",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/1f6d46fb-684e-4ee2-af14-a0be086505d9-test/f450a7a19d317967b32567172c4b82ea0d95497b4fb70856bf2cad489524d8a2_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/30d5409f-2545-4974-8d13-23fd268da4b4-test/a911b4b2677e41add2db2cbe1f2eda5c324145425422412b7f15f8741a05c150_ai.jpeg"
   },
   {
     "name": "Property Partners",
-    "description": "Full-service real estate company providing expert guidance for buying",
-    "industry": "selling",
-    "content_style": "and property investment.",
-    "writing_style": "Real Estate",
-    "image_url_a": "professional",
-    "image_url_b": "direct"
+    "description": "Full-service real estate company providing expert guidance for buying, selling, and property investment.",
+    "industry": "Real Estate",
+    "content_style": "professional",
+    "writing_style": "direct",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/5d05af0a-af0a-40a3-883f-36c889df4ffd-test/23e300cd7b46c08135152ac52c6ed49a641ceccc566362d3b6e8aeb11557ffff_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/22c0b02d-1282-45f8-a746-1af5c3e16c3d-test/a6b3ed6a129dc15c2f619c0b5de84038a9a896fc94fb6015d8904e719607c44e_ai.jpeg"
   },
   {
     "name": "Protection Services",
@@ -406,12 +406,12 @@
   },
   {
     "name": "Shipping Services",
-    "description": "Logistics company providing transportation",
-    "industry": "warehousing",
-    "content_style": "and supply chain solutions.",
-    "writing_style": "Logistics",
-    "image_url_a": "street",
-    "image_url_b": "playful"
+    "description": "Logistics company providing transportation, warehousing, and supply chain solutions.",
+    "industry": "Logistics",
+    "content_style": "street",
+    "writing_style": "playful",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/b6927ad3-de94-4165-80fc-1ca7f883b7aa-test/9dd95f00c9afa32e326b37c6f149ec0c839bd2901d3b1a753e480229107e3286_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/87f78cc6-6ff9-4570-b82d-536fd3c1aa8a-test/08565ebfb9c0d69980e9ea160234a62c17c9a78dc638ef84b3f3aced3df5ca75_ai.jpeg"
   },
   {
     "name": "Social Impact",
@@ -460,21 +460,21 @@
   },
   {
     "name": "Tech Support",
-    "description": "Professional IT services including system administration",
-    "industry": "technical support",
-    "content_style": "and technology consulting.",
-    "writing_style": "IT Services",
-    "image_url_a": "organic",
-    "image_url_b": "direct"
+    "description": "Professional IT services including system administration, technical support, and technology consulting.",
+    "industry": "IT Services",
+    "content_style": "organic",
+    "writing_style": "direct",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/92f1a0d3-0320-4d47-87ef-b4e8bd71ff7f-test/efa74712aae63f3290cf9314b1bf89056be6d9a352bc65f53ed66d1675da76e7_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/88786cc7-be01-4cc4-8725-3ac5d0dd657b-test/5e864a218546edac8960fad876be4d9f4dd4a3459ee8a89dd4f21caf01e16be1_ai.jpeg"
   },
   {
     "name": "Training Services",
-    "description": "Educational services provider offering training",
-    "industry": "tutoring",
-    "content_style": "and learning programs.",
-    "writing_style": "Educational Service",
-    "image_url_a": "organic",
-    "image_url_b": "direct"
+    "description": "Educational services provider offering training, tutoring, and learning programs.",
+    "industry": "Educational Service",
+    "content_style": "organic",
+    "writing_style": "direct",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/d90b4722-94c5-499f-b906-7c390f47d264-test/e80f313d2cf1052ada41408a8172b154c2b3f40e88b57b276fdc921ac465613c_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/fd3b21c1-5f97-4475-90a8-43cbc6930201-test/56d207237b37fd8e6f1847358cdad5e8a5360cf7b29e9fc5c453f3fb1470ccb0_ai.jpeg"
   },
   {
     "name": "Travel Partners",
@@ -514,12 +514,12 @@
   },
   {
     "name": "Wellness Pro",
-    "description": "Holistic wellness center providing health services",
-    "industry": "fitness programs",
-    "content_style": "and wellness coaching.",
-    "writing_style": "Wellness",
-    "image_url_a": "bold",
-    "image_url_b": "formal"
+    "description": "Holistic wellness center providing health services, fitness programs, and wellness coaching.",
+    "industry": "Wellness",
+    "content_style": "bold",
+    "writing_style": "formal",
+    "image_url_a": "https://isteam.dev-wsimg.com/wam-templates/5faf3138-d2c3-4a9c-8c38-b20414bd613a-test/d2dfbeda04bf7dfecfb6331ccac132cd94b2c9442d52c935f39e5c4c5ddbd1a4_ai.jpeg",
+    "image_url_b": "https://isteam.dev-wsimg.com/wam-templates/755f5cf3-faa1-4d37-be9a-d102be23f26a-test/9078461645e3f7cded3e75fc2cb7940c6c9a3e72c81a9cc6113ba0a0bf3815e0_ai.jpeg"
   },
   {
     "name": "Wellness Spa",

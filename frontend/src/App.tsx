@@ -5,7 +5,7 @@ import AnalyticsPage from './pages/AnalyticsPage';
 
 function App() {
   // Use basename only in production (GitHub Pages)
-  const basename = import.meta.env.PROD ? '/getty-blind-test' : '';
+  const basename = process.env.NODE_ENV === 'production' ? '/getty-blind-test' : '';
   
   return (
     <Router basename={basename}>
