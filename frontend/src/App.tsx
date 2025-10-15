@@ -4,8 +4,11 @@ import ReviewPage from './pages/ReviewPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 
 function App() {
+  // Use basename only in production (GitHub Pages)
+  const basename = import.meta.env.PROD ? '/getty-blind-test' : '';
+  
   return (
-    <Router basename="/getty-blind-test">
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<UploadPage />} />
         <Route path="/review/:sessionId" element={<ReviewPage />} />
