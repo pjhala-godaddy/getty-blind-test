@@ -16,7 +16,7 @@ function ReviewPage() {
   const [businesses, setBusinesses] = useState<Business[]>([]);
   const [sessionName, setSessionName] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<'A' | 'B' | null>(null);
+  const [selectedOption, setSelectedOption] = useState<'A' | 'B' | 'None' | 'Both' | null>(null);
   const [commentA, setCommentA] = useState('');
   const [commentB, setCommentB] = useState('');
   const [startTime, setStartTime] = useState(Date.now());
@@ -67,7 +67,7 @@ function ReviewPage() {
 
   const currentBusiness = businesses[currentIndex];
 
-  const handleOptionSelect = (option: 'A' | 'B') => {
+  const handleOptionSelect = (option: 'A' | 'B' | 'None' | 'Both') => {
     setSelectedOption(option);
   };
 
@@ -123,6 +123,10 @@ function ReviewPage() {
         handleOptionSelect('A');
       } else if (e.key === 'b' || e.key === 'B') {
         handleOptionSelect('B');
+      } else if (e.key === 'n' || e.key === 'N') {
+        handleOptionSelect('None');
+      } else if (e.key === 'o' || e.key === 'O') {
+        handleOptionSelect('Both');
       } else if (e.key === 'ArrowRight' && selectedOption) {
         handleSubmit();
       } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
@@ -205,6 +209,21 @@ function ReviewPage() {
           </div>
         </div>
 
+        <div className="additional-options">
+          <button
+            className={`option-btn ${selectedOption === 'None' ? 'selected' : ''}`}
+            onClick={() => handleOptionSelect('None')}
+          >
+            None (N)
+          </button>
+          <button
+            className={`option-btn ${selectedOption === 'Both' ? 'selected' : ''}`}
+            onClick={() => handleOptionSelect('Both')}
+          >
+            Both (O)
+          </button>
+        </div>
+
         <div className="controls">
           <button
             className="btn-secondary"
@@ -233,7 +252,7 @@ function ReviewPage() {
         </div>
 
         <div className="keyboard-hints">
-          Press <kbd>A</kbd> or <kbd>B</kbd> to select | <kbd>←</kbd> Previous | <kbd>→</kbd> Next
+          Press <kbd>A</kbd> or <kbd>B</kbd> to select | <kbd>N</kbd> None | <kbd>O</kbd> Both | <kbd>←</kbd> Previous | <kbd>→</kbd> Next
         </div>
       </div>
     </div>

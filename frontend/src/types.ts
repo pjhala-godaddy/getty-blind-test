@@ -22,7 +22,7 @@ export interface Review {
   id: string;
   business_id: string;
   reviewer_name: string;
-  selected_option: 'A' | 'B';
+  selected_option: 'A' | 'B' | 'None' | 'Both';
   comment_a: string | null;
   comment_b: string | null;
   time_spent_ms: number;
